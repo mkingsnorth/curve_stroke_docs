@@ -38,6 +38,9 @@ and starting on a handle drags the handle.
 
 New points take the **Initial Point Type** set in the Stroke panel (see :ref:`point_types`).
 
+Each point of the active curve is drawn inside a ring on the surface showing the brush's size there,
+so you can see how wide the stroke will be (smaller where the pressure is lower, if the brush's size uses pressure).
+
 ----------------------------------------------------------------------
 
 .. _selecting:
@@ -121,7 +124,7 @@ Point Pressure
 
 Each point has a pressure from 0 to 1 (1 by default), for tapered strokes. Pressure fades evenly from one point to the next.
 
-Press **Alt+S** and move the mouse in or out to set the pressure of the selected points; left-click to confirm or right-click to cancel.
+Press **Alt+S** and move the mouse right for more pressure or left for less, from wherever the mouse is; left-click to confirm or right-click to cancel.
 Points are drawn smaller for less pressure, and their value is shown beside them when it is below 1:
 
 .. image:: _static/images/pressure_labels.png
